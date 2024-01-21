@@ -23,5 +23,25 @@ function validateForm() {
         return false;
       }
     }
+function fadeInOnScroll() {
+  const elements = document.querySelectorAll('.break_b');
+  const windowHeight = window.innerHeight;
+
+  function checkPosition() {
+    for (let i = 0; i < elements.length; i++) {
+      const element = elements[i];
+      const positionFromTop = element.getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.add('fade-in-element');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  checkPosition();
+}
+
+fadeInOnScroll();
   
 		
