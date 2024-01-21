@@ -3,6 +3,10 @@ const screenHeight = window.innerHeight;
 element.style.height = `${screenHeight}px`;
 window.addEventListener("resize", changeFontSize);
 
+const elements = document.getElementsByClassName("carousel-caption");
+const screenHeight = window.innerHeight;
+element.style.height = `${screenHeight}px`;
+window.addEventListener("resize", changeFontSize);
 
 function validateForm() {
       const name = document.forms["myForm"]["name"].value;
