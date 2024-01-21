@@ -65,41 +65,30 @@
                 </div>
               </div>
         </div>
+    </div>
     <div class = "bg-warning">
         <div class="container  break_b bg-warning">   
             <h1 class="card-title text-center "style="margin-bottom: 1rem;"">Обратная связь</h1>
             <div style="position:relative;overflow:hidden;align-items: center"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.557552%2C55.832005&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc3NDUyOBJG0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCb0LjRgdGC0LLQtdC90L3QuNGH0L3QsNGPINCw0LvQu9C10Y8sIDLQkCIKDSY4FkIV-VNfQg%2C%2C&z=16.6" width="920" height="400" frameborder="1" allowfullscreen="true" ></iframe></div>
             
-      <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltip01" class="form-label">Как мне к вам обращаться?</label>
-          <input type="text" class="form-control" id="validationTooltip01"  required>
-          <div class="valid-tooltip">
-            Приятно познакомиться!
-          </div>
+     <form name="myForm" class="row g-3 needs-validation"  onsubmit="return validateForm()">
+      <div class="col-md-5 position-relative">
+      <label for="name" class="form-label fs-4">Как мне к вам обращаться?</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="col-md-5 position-relative">
+      <label for="email"class="form-label fs-4">На какую почту ждете ответа?</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="col-8 ">
+      <label for="message"class="form-label fs-4">Что я могу для вас сделать?</label>
+      <textarea id="message"class="form-control" name="message" required></textarea>
+      </div>
+      <div class="col-12 mx-auto "style="margin-bottom: 3rem;">
+      <button  class="btn btn-dark type="submit">Отправить форму</button>
+      </div>
+    </form>
         </div>
-        <div class="col-md-4 position-relative">
-          <label for="validationTooltipUsername" class="form-label">На какую почту ждете ответа?</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-            <div class="invalid-tooltip">
-                Неправильно набран адрес.
-            </div>
-          </div>
-        </div>
-        <div class="col-8">
-        <textarea class="form-control" id="validationTextarea" placeholder="Что я могу для вас сделать?" required></textarea>
-        <div class="invalid-feedback">
-         Пожалуйста, повторите.
-         </div>  
-        </div>   
-           <div class="col-12 mx-auto "style="margin-bottom: 3rem;"">
-           <button class="btn btn-dark" type="submit">Отправить форму</button>
-        </div>
-      </form>
-        </div>
-    </div>
     </div>
     <footer>
     <div class = "bg-dark">  
